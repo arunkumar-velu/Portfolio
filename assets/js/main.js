@@ -6,6 +6,11 @@
 
 (function($) {
 
+	$( document ).ready( function( )
+	{
+		new ScrollFlow(); 
+	} );
+
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1140px)',
@@ -16,10 +21,8 @@
 	});
 
 	$(function() {
-
 		var	$window = $(window),
 			$body = $('body');
-
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
@@ -28,7 +31,6 @@
 					$body.removeClass('is-loading');
 				}, 250);
 			});
-
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
@@ -39,25 +41,21 @@
 					skel.breakpoint('mobile').active
 				);
 			});
-
 		// Scrolly.
-			$('.scrolly').scrolly();
-
+		$('.scrolly').scrolly();
 		$("#navigation").hide();
 		var lastHeight = 0;
 		var currentHeight = 0;
 		$window.scroll(function(e) {
-			if($(window).scrollTop() > 100){
-				lastHeight = currentHeight;
-				currentHeight = $(window).scrollTop();
-				$("#navigation").show();
-				if(lastHeight < currentHeight){
-					$("#navigation").removeClass('slide-up');
-					$("#navigation").addClass('slide-down');
-				}else{
-					$("#navigation").removeClass('slide-down');
-					$("#navigation").addClass('slide-up');
-				}
+			lastHeight = currentHeight;
+			currentHeight = $(window).scrollTop();
+			$("#navigation").show();
+			if(lastHeight < currentHeight || currentHeight > 100){
+				$("#navigation").removeClass('slide-up');
+				$("#navigation").addClass('slide-down');
+			}else{
+				$("#navigation").removeClass('slide-down');
+				$("#navigation").addClass('slide-up');
 			}
 		});
 
