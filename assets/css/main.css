@@ -1,6 +1,5 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
-
 /*
 	Photon by HTML5 UP
 	html5up.net | @ajlkn
@@ -1814,7 +1813,8 @@
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: 'Courgette', cursive;
+		/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -3692,3 +3692,55 @@
 			}
 
 	}
+
+  .logo{
+    width: 175px;
+    height: 175px;
+    border: 1px solid #ffffff;
+    transform: rotate(45deg);
+    padding: 0px;
+  }
+  div.logo{
+    margin: 0px 40px 0px 134px
+  }
+  .logo span{
+    font-size: 100px;
+    line-height: 1;
+    padding: 45px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    display: inline-block;
+  }
+  .language{
+    margin-top: 100px;
+  }
+  .language li{
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    margin-left: 100px;
+  }
+  .fa-code{
+    right: 14px;
+    bottom: 14px;
+    color: #c3e895;
+  }
+  .fa-html5{
+    bottom: 8px;
+    right: -3px;
+    color: #4a87d3;
+  }
+  .icon-css3-logo{
+    color: #6bd4c8;
+  }
+  .icon-js-logo{
+    color: #57aed3;
+  }
+  .icon-jquery-logo{
+    color: #ffb400;
+  }
+  .logo .glyphter{
+    bottom: 5px;
+    right: 16px;
+    position: relative;
+  }
