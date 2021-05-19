@@ -2854,6 +2854,9 @@
 	.expertisein:hover{
 		border-bottom: solid 3px #178745;
 	}
+	.handson:hover{
+		border-bottom: solid 3px #1b08eb;
+	}
 	.reachme:hover{
 		border-bottom: solid 3px #ec4b46;
 	}
