@@ -1813,7 +1813,7 @@
 
 	body, input, select, textarea {
 		color: #666;
-    font-family: 'Courgette', cursive;
+		font-family: 'Open Sans', sans-serif;
 		/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
 		font-size: 16pt;
 		font-weight: 300;
@@ -2853,6 +2853,9 @@
 	}
 	.expertisein:hover{
 		border-bottom: solid 3px #178745;
+	}
+	.handson:hover{
+		border-bottom: solid 3px #1b08eb;
 	}
 	.reachme:hover{
 		border-bottom: solid 3px #ec4b46;

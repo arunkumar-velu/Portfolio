@@ -27,6 +27,11 @@
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
+				$(".copyright span").html(new Date().getFullYear());
+				var startYear = new Date(2011, 09, 27).getFullYear();
+				var currentYear = new Date().getFullYear();
+				var experience = parseInt(currentYear) - parseInt(startYear);
+				$(".experience").html(experience+'+')
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 250);
