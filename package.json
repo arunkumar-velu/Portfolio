@@ -6,7 +6,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "example",
@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "~4.13.4"
   },
-    "engines": {
+  "engines": {
     "node": "0.10.30"
   }
 }
