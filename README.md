@@ -1,2 +1,2 @@
 # Portfolio
-Profile URL: https://portfolio.arunkumarvelu.in
+URL: https://portfolio.arunkumarvelu.in
