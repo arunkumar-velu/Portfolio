@@ -3200,6 +3200,7 @@
 			opacity: 1;
 			position: relative;
 			z-index: 1;
+			width: 50%;
 		}
 
 			#header .inner .actions {
