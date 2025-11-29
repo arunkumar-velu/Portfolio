@@ -16,6 +16,6 @@
     "express": "latest"
   },
   "engines": {
-    "node": "24.x"
+    "node": "latest"
   }
 }
